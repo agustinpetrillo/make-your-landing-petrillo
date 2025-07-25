@@ -1,3 +1,18 @@
+Hola profe, como estas?
+
+Queria comentarte que estoy realizando el curso con NextJS y TypeScript (como podes ver), en lugar de hacerlo unicamente con React y JavaScript como estaba planeado originalmente. La decision fue porque Next se basa en React (que es el eje del curso) pero ademas incorpora funcionalidades adicionales como enrutamiento y optimizacion automatica de performance, lo cual me parecio util para tener una experiencia mas 'completa'.
+Tambien opte por usar TypeScript ya que es un superset de JavaScript mas estricto, que ayuda a detectar errores en tiempo de desarrollo y mejora la mantenibilidad del codigo, sobre todo pensado en el trabajo en equipo.
+
+Ademas decidi optar por estas herramientas ya que son altamente demandadas en el mercado laboral actual y queria aprovechar esta oportunidad para practicarlas con un nivel extra de dificultad (pensando esto como si fuera un proyecto de una empresa), siempre manteniendome dentro de las consignas y las entregas del curso.
+
+Solo queria explicarle mi eleccion para que sepa que no fue por evitar el contenido o no querer usar las tecnologias pactadas, sino por tratar de sacarle mas provecho al aprendizaje.
+
+Muchas gracias por leerme!
+
+PD: En caso de no ser valido o buscar exclusivamente que se desarrolle con React y JavaScript, no habria ningun problema en re-crear el proyecto. Como dije anteriormente, es un desafio mas personal y preparacion profesional para mi carrera como desarrollador, manteniendome dentro de las consignas del curso.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
