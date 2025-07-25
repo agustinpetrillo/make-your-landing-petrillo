@@ -1,0 +1,3 @@
+interface ItemListContainerProps {
+  message: string;
+}
