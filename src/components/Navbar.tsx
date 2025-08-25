@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/../public/assets/imgs/logo.png";
-import CartWidget from "./reutilizable/CartWidget";
+import CartWidget from "./shared/CartWidget";
 
 export default function Navbar() {
   return (

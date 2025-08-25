@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "image": "images/product1.jpg",
+    "name": "Wireless Mouse",
+    "slug": "wireless-mouse",
+    "category": "Electronics",
+    "price": 19.99,
+    "stock": 120
+  },
+  {
+    "id": 2,
+    "image": "images/product2.jpg",
+    "name": "Bluetooth Headphones",
+    "slug": "bluetooth-headphones",
+    "category": "Electronics",
+    "price": 49.99,
+    "stock": 80
+  },
+  {
+    "id": 3,
+    "image": "images/product3.jpg",
+    "name": "Laptop Stand",
+    "slug": "laptop-stand",
+    "category": "Accessories",
+    "price": 29.99,
+    "stock": 60
+  },
+  {
+    "id": 4,
+    "image": "images/product4.jpg",
+    "name": "USB-C Hub",
+    "slug": "usb-c-hub",
+    "category": "Electronics",
+    "price": 34.99,
+    "stock": 100
+  },
+  {
+    "id": 5,
+    "image": "images/product5.jpg",
+    "name": "Gaming Keyboard",
+    "slug": "gaming-keyboard",
+    "category": "Electronics",
+    "price": 59.99,
+    "stock": 75
+  },
+  {
+    "id": 6,
+    "image": "images/product6.jpg",
+    "name": "Smart Watch",
+    "slug": "smart-watch",
+    "category": "Wearables",
+    "price": 99.99,
+    "stock": 50
+  },
+  {
+    "id": 7,
+    "image": "images/product7.jpg",
+    "name": "Portable Charger",
+    "slug": "portable-charger",
+    "category": "Accessories",
+    "price": 24.99,
+    "stock": 200
+  },
+  {
+    "id": 8,
+    "image": "images/product8.jpg",
+    "name": "Action Camera",
+    "slug": "action-camera",
+    "category": "Electronics",
+    "price": 89.99,
+    "stock": 40
+  },
+  {
+    "id": 9,
+    "image": "images/product9.jpg",
+    "name": "Fitness Tracker",
+    "slug": "fitness-tracker",
+    "category": "Wearables",
+    "price": 39.99,
+    "stock": 90
+  },
+  {
+    "id": 10,
+    "image": "images/product10.jpg",
+    "name": "Noise Cancelling Earbuds",
+    "slug": "noise-cancelling-earbuds",
+    "category": "Electronics",
+    "price": 59.99,
+    "stock": 65
+  },
+  {
+    "id": 11,
+    "image": "images/product11.jpg",
+    "name": "Smartphone Tripod",
+    "slug": "smartphone-tripod",
+    "category": "Accessories",
+    "price": 17.99,
+    "stock": 110
+  },
+  {
+    "id": 12,
+    "image": "images/product12.jpg",
+    "name": "LED Desk Lamp",
+    "slug": "led-desk-lamp",
+    "category": "Home",
+    "price": 22.99,
+    "stock": 130
+  },
+  {
+    "id": 13,
+    "image": "images/product13.jpg",
+    "name": "Wireless Charger",
+    "slug": "wireless-charger",
+    "category": "Electronics",
+    "price": 27.99,
+    "stock": 95
+  },
+  {
+    "id": 14,
+    "image": "images/product14.jpg",
+    "name": "Bluetooth Speaker",
+    "slug": "bluetooth-speaker",
+    "category": "Electronics",
+    "price": 44.99,
+    "stock": 85
+  },
+  {
+    "id": 15,
+    "image": "images/product15.jpg",
+    "name": "Tablet Case",
+    "slug": "tablet-case",
+    "category": "Accessories",
+    "price": 14.99,
+    "stock": 150
+  },
+  {
+    "id": 16,
+    "image": "images/product16.jpg",
+    "name": "Webcam",
+    "slug": "webcam",
+    "category": "Electronics",
+    "price": 39.99,
+    "stock": 70
+  },
+  {
+    "id": 17,
+    "image": "images/product17.jpg",
+    "name": "Mechanical Pencil",
+    "slug": "mechanical-pencil",
+    "category": "Stationery",
+    "price": 5.99,
+    "stock": 300
+  },
+  {
+    "id": 18,
+    "image": "images/product18.jpg",
+    "name": "Notebook",
+    "slug": "notebook",
+    "category": "Stationery",
+    "price": 3.99,
+    "stock": 400
+  },
+  {
+    "id": 19,
+    "image": "images/product19.jpg",
+    "name": "Coffee Mug",
+    "slug": "coffee-mug",
+    "category": "Home",
+    "price": 9.99,
+    "stock": 180
+  },
+  {
+    "id": 20,
+    "image": "images/product20.jpg",
+    "name": "Desk Organizer",
+    "slug": "desk-organizer",
+    "category": "Home",
+    "price": 15.99,
+    "stock": 140
+  }
+]
