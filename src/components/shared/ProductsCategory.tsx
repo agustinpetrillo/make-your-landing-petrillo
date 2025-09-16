@@ -1,24 +1,45 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import products from "@/../products.json";
-import Products from "../Products";
-
-const CATEGORIES = [
-  "All",
-  ...new Set(products.map((product) => product.category)),
-];
+import ProductsContainer from "../containers/ProductsContainer";
+import SearchBar from "./SearchBar";
+import { getProducts } from "@/lib/firestore";
 
 export default function ProductsCategory() {
   const [search, setSearch] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
   const [category, setCategory] = useState<string>("All");
-  const [data, setData] = useState<ProductProps[]>(products);
+  const [data, setData] = useState<ProductProps[]>([]);
+  const [filteredData, setFilteredData] = useState<ProductProps[]>([]);
+
+  const CATEGORIES = [
+    "All",
+    ...new Set(data.map((product) => product.category)),
+  ];
+
+  const fetchProductsData = async () => {
+    setLoading(true);
+
+    try {
+      const data = await getProducts();
+      setData(data as ProductProps[]);
+      setFilteredData(data as ProductProps[]);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    }
+
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchProductsData();
+  }, []);
 
   useEffect(() => {
     let filtered =
       category === "All"
-        ? products
-        : products.filter((product) => product.category === category);
+        ? data
+        : data.filter((product) => product.category === category);
 
     if (search.trim()) {
       filtered = filtered.filter((product) =>
@@ -26,35 +47,25 @@ export default function ProductsCategory() {
       );
     }
 
-    setData(filtered);
-  }, [search, category]);
+    setFilteredData(filtered);
+  }, [search, category, data]);
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex justify-between w-full max-w-4xl my-4">
-        <ul className="flex space-x-4">
-          {CATEGORIES.map((cat) => (
-            <li
-              key={cat}
-              className={`cursor-pointer hover:text-orange-400 duration-300 transition-all ${
-                category === cat && "text-orange-500 font-bold"
-              }`}
-              onClick={() => setCategory(cat)}
-            >
-              {cat}
-            </li>
-          ))}
-        </ul>
-        <input
-          type="text"
-          placeholder="Search..."
-          className="border rounded px-3 py-1 outline-none"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </div>
-
-      <Products data={data} />
+      <SearchBar
+        search={search}
+        setSearch={setSearch}
+        category={category}
+        setCategory={setCategory}
+        categories={CATEGORIES}
+      />
+      {!loading ? (
+        <ProductsContainer data={filteredData} />
+      ) : (
+        <div className="flex justify-center items-center my-10">
+          <p className="text-gray-500 text-lg font-semibold">Loading...</p>
+        </div>
+      )}
     </div>
   );
 }
